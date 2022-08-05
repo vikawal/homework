@@ -26,7 +26,7 @@ rectangle.style.borderColor = borderColour;
 
 let borderWidth = prompt('Which width of the rectangle border in px do you want? Write number and px, example: 10px');
 console.log (borderWidth);
-rectangle.stylele.borderWidth = borderWidth;
+rectangle.style.borderWidth = borderWidth;
 
 let firstValue = prompt ('Enter first value of the sum', '');
 let secondValue = prompt ('Enter second value of the sum', '');
