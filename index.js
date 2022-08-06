@@ -84,8 +84,8 @@
 //alert (message1);
 
 //Task 2 variant 3
-let a = prompt ('Enter first value (A)', '');
-let b = prompt ('Enter second value (B)', '');
-let c = prompt ('Enter third value (C)', '');
-let result = Math.max(+a, +b, +c);
-alert (result);
+//let a = prompt ('Enter first value (A)', '');
+//let b = prompt ('Enter second value (B)', '');
+//let c = prompt ('Enter third value (C)', '');
+//let result = Math.max(+a, +b, +c);
+//alert (result);
