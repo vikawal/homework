@@ -6,11 +6,11 @@ const getUserChoice = (userInput) => {
 return userInput;
 }
 else {
-    alert ('ERROR, you can choose only between paper rock and scissrs');
+    alert ('ERROR, you can choose only between paper rock and scissors');
     throw new Error ("ERROR");  
 } 
 } 
-console.log (getUserChoice());
+//console.log (getUserChoice());
 
 let getComputerChoice = () => {
     let anyNumber = Math.floor(Math.random() * 3);
@@ -29,7 +29,8 @@ let getComputerChoice = () => {
         return "Fuck";
     }
 }
-console.log (getComputerChoice());
+
+//console.log (getComputerChoice());
 
 
 let determineWinner = (userChoice, computerChoice) => {
@@ -65,18 +66,16 @@ let determineWinner = (userChoice, computerChoice) => {
     }
 }  
 }  
-console.log (determineWinner());
+//console.log (determineWinner('paper', 'scissors'));
 
 let playGame = () => {
-    
     let userChoice = getUserChoice();
     //console.log (userChoice);
     let computerChoice = getComputerChoice();
     //console.log (computerChoice);
-    determineWinner(userChoice, computerChoice);
+    console.log(determineWinner(userChoice, computerChoice));
+    alert (determineWinner(userChoice, computerChoice));
     //console.log (determineWinner());
-    
-    //console.log (determineWinner (userChoice, computerChoice));
 }
-console.log (determineWinner (userChoice, computerChoice));
-//playGame();
+//console.log (determineWinner (userChoice, computerChoice));
+playGame();
