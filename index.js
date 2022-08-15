@@ -2,7 +2,7 @@
 const getUserChoice = (userInput) => {
   userInput = prompt ('What do you choose: rock, scissors or paper?'); 
   userInput = userInput.toLowerCase(); 
-  if (userInput == "rock" || userInput == "paper" || userInput == "scissors") {
+  if (userInput == "rock" || userInput == "paper" || userInput == "scissors" || userInput == "bomb") {
 return userInput;
 }
 else {
@@ -26,7 +26,7 @@ let getComputerChoice = () => {
         return "paper";
     }
     else {
-        return "Fuck";
+        return "Fuck, it works)))";
     }
 }
 
@@ -65,6 +65,9 @@ let determineWinner = (userChoice, computerChoice) => {
         return "You WON!";  
     }
 }  
+else if (userChoice === "bomb") {
+    return "You WON, small cheater!";
+}
 }  
 //console.log (determineWinner('paper', 'scissors'));
 
