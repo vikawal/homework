@@ -1,28 +1,82 @@
-var userName = 'Vika Wal';
-var userAge = 36;
-var bool = true;
+//Task 1 Game (details in style sheet)
+const getUserChoice = (userInput) => {
+  userInput = prompt ('What do you choose: rock, scissors or paper?'); 
+  userInput = userInput.toLowerCase(); 
+  if (userInput == "rock" || userInput == "paper" || userInput == "scissors") {
+return userInput;
+}
+else {
+    alert ('ERROR, you can choose only between paper rock and scissrs');
+    throw new Error ("ERROR");  
+} 
+} 
+console.log (getUserChoice());
 
-var Array1 = ['Vika Wal', 36,true];
-var Array2 = [userName,userAge];
-var colors2 = ['black', 'white', 'tabby'];
+let getComputerChoice = () => {
+    let anyNumber = Math.floor(Math.random() * 3);
+    alert (anyNumber);
+ 
+    if (anyNumber == 0) {
+        return "rock";
+    }
+    else if (anyNumber == 1) {
+        return "scissors";
+    }
+    else if (anyNumber == 2) {
+        return "paper";
+    }
+    else {
+        return "Fuck";
+    }
+}
+console.log (getComputerChoice());
 
-var Animal = {
-    typeOfAnimal:'Dog',
-    paws: 4,
-    canMeow: false,
-    canBark: true,
-    colors: colors2,
-    weight: '10kg',
-    baby: {
-        typeOfAnimal: 'Puppy',
-        paws: 4,
-        tail: 1,
-        weight: '2kg',
-    },
-    owner: {
-        name: userName,
+
+let determineWinner = (userChoice, computerChoice) => {
+        //console.log(`getUserChoice = "${getUserChoice}"; userChoice = "${userChoice}"`);
+        
+   if (userChoice === computerChoice) {
+  return "The game was a tie";
+   }   
+ else if (userChoice === "rock") {
+    if (computerChoice === "paper") {
+        return "Computer WON!";
+    }
+    else {
+        return "You WON!";
+    }   
+}
+
+ else if (userChoice === "paper") {
+    if (computerChoice === "scissors") {
+        return "Computer WON!";
+    }
+    else { 
+        return "You WON!";
     }
 }
 
-//alert (Animal.typeOfAnimal + ' is parent of ' + Animal.baby.typeOfAnimal);
-//console.log(Animal);
+ else if (userChoice === "scissors") {
+    if (computerChoice === "rock") {
+        return "Computer WON!";
+    }
+    else {
+        return "You WON!";  
+    }
+}  
+}  
+console.log (determineWinner());
+
+let playGame = () => {
+    
+    let userChoice = getUserChoice();
+    //console.log (userChoice);
+    let computerChoice = getComputerChoice();
+    //console.log (computerChoice);
+    determineWinner(userChoice, computerChoice);
+    //console.log (determineWinner());
+    
+    //console.log (determineWinner (userChoice, computerChoice));
+}
+console.log (determineWinner (userChoice, computerChoice));
+//playGame();
