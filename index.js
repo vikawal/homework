@@ -1,15 +1,34 @@
 //Task 1 Game (details in style sheet)
+
+
 const getUserChoice = (userInput) => {
   userInput = prompt ('What do you choose: rock, scissors or paper?'); 
   userInput = userInput.toLowerCase(); 
-  if (userInput == "rock" || userInput == "paper" || userInput == "scissors" || userInput == "bomb") {
-return userInput;
-}
+  //if (userInput == "rock" || userInput == "paper" || userInput == "scissors" || userInput == "bomb") {
+//return userInput;
+if (userInput == "rock") {
+    document.getElementById("pic5Rock").style.display = 'showTheChoiceOfUser';
+    return userInput;
+} 
+else if (userInput == "paper") {
+    document.getElementById("pic6Paper").style.display = 'showTheChoiceOfUser';
+    return userInput;
+} 
+else if (userInput == "scissors") {
+    document.getElementById("pic7Scissors").style.display = 'showTheChoiceOfUser';
+    return userInput;
+} 
+else if (userInput == "bomb") {
+    document.getElementById("pic8Bomb").style.display = 'showTheChoiceOfUser';
+    return userInput;
+} 
 else {
+    document.getElementById("img9Oops").style.display = 'showTheChoiceOfUser';
     alert ('ERROR, you can choose only between paper rock and scissors');
     throw new Error ("ERROR");  
 } 
 } 
+
 //console.log (getUserChoice());
 
 let getComputerChoice = () => {
@@ -17,13 +36,18 @@ let getComputerChoice = () => {
     alert (anyNumber);
  
     if (anyNumber == 0) {
+        document.getElementById("pic5Rock1").style.display = 'showTheChoiceOfComp';
         return "rock";
+        
     }
     else if (anyNumber == 1) {
+        document.getElementById("pic7Scissors1").style.display = 'showTheChoiceOfComp';
         return "scissors";
     }
     else if (anyNumber == 2) {
+        document.getElementById("pic6Paper1").style.display = 'showTheChoiceOfComp';
         return "paper";
+        
     }
     else {
         return "Fuck, it works)))";
@@ -36,39 +60,50 @@ let getComputerChoice = () => {
 let determineWinner = (userChoice, computerChoice) => {
         //console.log(`getUserChoice = "${getUserChoice}"; userChoice = "${userChoice}"`);
         
-   if (userChoice === computerChoice) {
+        if (userChoice === computerChoice) {
+            document.getElementById("img1Tie").style.display = 'showTheResult';
   return "The game was a tie";
    }   
  else if (userChoice === "rock") {
     if (computerChoice === "paper") {
+        document.getElementById("img2Comp").style.display = 'showTheResult';
         return "Computer WON!";
     }
     else {
+        document.getElementById("img3You").style.display = 'showTheResult';
         return "You WON!";
     }   
 }
 
  else if (userChoice === "paper") {
     if (computerChoice === "scissors") {
+        document.getElementById("img2Comp").style.display = 'showTheResult';
         return "Computer WON!";
     }
     else { 
+        document.getElementById("img3You").style.display = 'showTheResult';
         return "You WON!";
     }
 }
 
  else if (userChoice === "scissors") {
     if (computerChoice === "rock") {
+        document.getElementById("img2Comp").style.display = 'showTheResult';
         return "Computer WON!";
     }
     else {
-        return "You WON!";  
+        document.getElementById("img3You").style.display = 'showTheResult';
+        return "You WON!"; 
     }
 }  
 else if (userChoice === "bomb") {
+    document.getElementById("img4Cheat").style.display = 'showTheResult';
     return "You WON, small cheater!";
+   
 }
 }  
+
+
 //console.log (determineWinner('paper', 'scissors'));
 
 let playGame = () => {
@@ -77,8 +112,10 @@ let playGame = () => {
     let computerChoice = getComputerChoice();
     //console.log (computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
+    
     alert (determineWinner(userChoice, computerChoice));
     //console.log (determineWinner());
+    
 }
 //console.log (determineWinner (userChoice, computerChoice));
 playGame();
