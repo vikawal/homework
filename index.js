@@ -25,7 +25,7 @@ else if (userInput == "bomb") {
 else {
     document.getElementById("img9Oops").style.display = 'block';
     alert ('ERROR, you can choose only between paper rock and scissors');
-    throw new Error ("ERROR");  
+    //throw new Error ("ERROR");  
 } 
 } 
 
@@ -33,7 +33,7 @@ else {
 
 let getComputerChoice = () => {
     let anyNumber = Math.floor(Math.random() * 3);
-    alert (anyNumber);
+    //alert (anyNumber);
  
     if (anyNumber == 0) {
         document.getElementById("pic5Rock1").style.display = 'block';
@@ -105,17 +105,31 @@ else if (userChoice === "bomb") {
 
 
 //console.log (determineWinner('paper', 'scissors'));
+let resertPreviousGame = () => {
+    document.getElementById("pic5Rock").style.display = 'none';
+    document.getElementById("pic6Paper").style.display = 'none';
+    document.getElementById("pic7Scissors").style.display = 'none';
+    document.getElementById("pic8Bomb").style.display = 'none';
+    document.getElementById("img9Oops").style.display = 'none';
+    document.getElementById("pic5Rock1").style.display = 'none';
+    document.getElementById("pic7Scissors1").style.display = 'none';
+    document.getElementById("pic6Paper1").style.display = 'none';
+    document.getElementById("img1Tie").style.display = 'none';
+    document.getElementById("img2Comp").style.display = 'none';
+    document.getElementById("img3You").style.display = 'none';
+    document.getElementById("img4Cheat").style.display = 'none';
+}
 
 let playGame = () => {
+    resertPreviousGame();
     let userChoice = getUserChoice();
     //console.log (userChoice);
     let computerChoice = getComputerChoice();
     //console.log (computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
-    
     alert (determineWinner(userChoice, computerChoice));
     //console.log (determineWinner());
     
 }
 //console.log (determineWinner (userChoice, computerChoice));
-playGame();
+//playGame();
