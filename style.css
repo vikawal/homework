@@ -35,8 +35,8 @@ h1 {
 
 .user {
   
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -47,18 +47,22 @@ h1 {
   
 }
 .computer {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 40%;
   padding:10px;
-  margin: 20px;
+  margin: 20px; 
+}
+.resultGame {
+  padding-left: 35%;
+  padding-top: 20%;
 }
 #img1Tie {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -68,8 +72,8 @@ h1 {
   display: none;
 }
 #img2Comp {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -79,8 +83,8 @@ h1 {
   display: none;
 }
 #img3You {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -90,8 +94,8 @@ h1 {
   display: none;
 }
 #img4Cheat {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -101,8 +105,8 @@ h1 {
   display: none;
 }
 #pic5Rock {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -112,8 +116,8 @@ h1 {
   display: none;
 } 
 #pic6Paper {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -123,8 +127,8 @@ h1 {
   display: none;
 }
 #pic7Scissors {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -134,8 +138,8 @@ h1 {
   display: none;
 }
 #pic8Bomb {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -145,8 +149,8 @@ h1 {
   display: none;
 } 
 #img9Oops {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -156,8 +160,8 @@ h1 {
   display: none;
 }
 #pic5Rock1 {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -167,8 +171,8 @@ h1 {
   display: none;
 }
 #pic6Paper1 {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -178,8 +182,8 @@ h1 {
   display: none;
 }
 #pic7Scissors1 {
-  width:200px;
-  height:250px;
+  width:100px;
+  height:150px;
   border:5px solid #90A4AE;
   object-fit:cover;
   box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.5);

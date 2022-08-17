@@ -7,23 +7,23 @@ const getUserChoice = (userInput) => {
   //if (userInput == "rock" || userInput == "paper" || userInput == "scissors" || userInput == "bomb") {
 //return userInput;
 if (userInput == "rock") {
-    document.getElementById("pic5Rock").style.display = 'showTheChoiceOfUser';
+    document.getElementById("pic5Rock").style.display = 'block';
     return userInput;
 } 
 else if (userInput == "paper") {
-    document.getElementById("pic6Paper").style.display = 'showTheChoiceOfUser';
+    document.getElementById("pic6Paper").style.display = 'block';
     return userInput;
 } 
 else if (userInput == "scissors") {
-    document.getElementById("pic7Scissors").style.display = 'showTheChoiceOfUser';
+    document.getElementById("pic7Scissors").style.display = 'block';
     return userInput;
 } 
 else if (userInput == "bomb") {
-    document.getElementById("pic8Bomb").style.display = 'showTheChoiceOfUser';
+    document.getElementById("pic8Bomb").style.display = 'block';
     return userInput;
 } 
 else {
-    document.getElementById("img9Oops").style.display = 'showTheChoiceOfUser';
+    document.getElementById("img9Oops").style.display = 'block';
     alert ('ERROR, you can choose only between paper rock and scissors');
     throw new Error ("ERROR");  
 } 
@@ -36,16 +36,16 @@ let getComputerChoice = () => {
     alert (anyNumber);
  
     if (anyNumber == 0) {
-        document.getElementById("pic5Rock1").style.display = 'showTheChoiceOfComp';
+        document.getElementById("pic5Rock1").style.display = 'block';
         return "rock";
         
     }
     else if (anyNumber == 1) {
-        document.getElementById("pic7Scissors1").style.display = 'showTheChoiceOfComp';
+        document.getElementById("pic7Scissors1").style.display = 'block';
         return "scissors";
     }
     else if (anyNumber == 2) {
-        document.getElementById("pic6Paper1").style.display = 'showTheChoiceOfComp';
+        document.getElementById("pic6Paper1").style.display = 'block';
         return "paper";
         
     }
@@ -61,43 +61,43 @@ let determineWinner = (userChoice, computerChoice) => {
         //console.log(`getUserChoice = "${getUserChoice}"; userChoice = "${userChoice}"`);
         
         if (userChoice === computerChoice) {
-            document.getElementById("img1Tie").style.display = 'showTheResult';
+            document.getElementById("img1Tie").style.display = 'block';
   return "The game was a tie";
    }   
  else if (userChoice === "rock") {
     if (computerChoice === "paper") {
-        document.getElementById("img2Comp").style.display = 'showTheResult';
+        document.getElementById("img2Comp").style.display = 'block';
         return "Computer WON!";
     }
     else {
-        document.getElementById("img3You").style.display = 'showTheResult';
+        document.getElementById("img3You").style.display = 'block';
         return "You WON!";
     }   
 }
 
  else if (userChoice === "paper") {
     if (computerChoice === "scissors") {
-        document.getElementById("img2Comp").style.display = 'showTheResult';
+        document.getElementById("img2Comp").style.display = 'block';
         return "Computer WON!";
     }
     else { 
-        document.getElementById("img3You").style.display = 'showTheResult';
+        document.getElementById("img3You").style.display = 'block';
         return "You WON!";
     }
 }
 
  else if (userChoice === "scissors") {
     if (computerChoice === "rock") {
-        document.getElementById("img2Comp").style.display = 'showTheResult';
+        document.getElementById("img2Comp").style.display = 'block';
         return "Computer WON!";
     }
     else {
-        document.getElementById("img3You").style.display = 'showTheResult';
+        document.getElementById("img3You").style.display = 'block';
         return "You WON!"; 
     }
 }  
 else if (userChoice === "bomb") {
-    document.getElementById("img4Cheat").style.display = 'showTheResult';
+    document.getElementById("img4Cheat").style.display = 'block';
     return "You WON, small cheater!";
    
 }

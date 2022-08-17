@@ -15,6 +15,6 @@ const plantNeedsWater = (day) => {
     } else {
       return false;
     }
-   };
+  };
    let day = "Wednesday";
    console.log(plantNeedsWater(day));
